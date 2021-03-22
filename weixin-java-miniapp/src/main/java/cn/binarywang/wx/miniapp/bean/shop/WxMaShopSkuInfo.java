@@ -2,6 +2,7 @@ package cn.binarywang.wx.miniapp.bean.shop;
 
 import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -89,4 +90,13 @@ public class WxMaShopSkuInfo implements Serializable {
    */
   @SerializedName("sku_code")
   private String skuCode;
+
+  /**
+   * 销售属性
+   * <pre>
+   * 是否必填： 是
+   * </pre>
+   */
+  @SerializedName("sku_attrs")
+  private List<WxMaShopSkuAttribute> skuAttributeList;
 }

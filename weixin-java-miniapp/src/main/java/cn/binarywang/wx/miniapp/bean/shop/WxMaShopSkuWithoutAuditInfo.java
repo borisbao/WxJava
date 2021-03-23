@@ -2,56 +2,26 @@ package cn.binarywang.wx.miniapp.bean.shop;
 
 import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
-import java.util.List;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 /**
- * <pre>
- * sku对象
- * </pre>
- *
- * @author <a href="https://github.com/borisbao">boris</a>
- * @since 2021-03-22
+ * @author leiin
+ * @date 2021/3/23
+ * @description:
  */
 @Data
-@Builder
-@NoArgsConstructor
-@AllArgsConstructor
-public class WxMaShopSkuInfo implements Serializable {
+public class WxMaShopSkuWithoutAuditInfo implements Serializable {
 
-
-  private static final long serialVersionUID = -3617077838017818865L;
+  private static final long serialVersionUID = 3354108922805323888L;
 
   /**
-   * 商家自定义商品ID
-   * <pre>
-   * 是否必填： 是
-   * </pre>
-   */
-  @SerializedName("out_product_id")
-  private String outProductId;
-
-  /**
-   * 商家自定义商品ID
+   * 商家自定义skuID
    * <pre>
    * 是否必填： 是
    * </pre>
    */
   @SerializedName("out_sku_id")
   private String outSkuId;
-
-
-  /**
-   * sku小图
-   * <pre>
-   * 是否必填： 是
-   * </pre>
-   */
-  @SerializedName("thumb_img")
-  private String thumbImg;
 
   /**
    * 售卖价格,以分为单位
@@ -99,13 +69,4 @@ public class WxMaShopSkuInfo implements Serializable {
    */
   @SerializedName("sku_code")
   private String skuCode;
-
-  /**
-   * 销售属性
-   * <pre>
-   * 是否必填： 是
-   * </pre>
-   */
-  @SerializedName("sku_attrs")
-  private List<WxMaShopSkuAttribute> skuAttributeList;
 }

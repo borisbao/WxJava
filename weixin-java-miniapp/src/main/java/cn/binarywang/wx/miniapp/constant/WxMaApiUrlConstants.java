@@ -309,6 +309,11 @@ public class WxMaApiUrlConstants {
       String SPU_DELISTING_URL = "https://api.weixin.qq.com/shop/spu/delisting";
     }
 
-
+    interface Order {
+      String ORDER_CHECK_SCENE = "https://api.weixin.qq.com/shop/scene/check";
+      String ORDER_ADD = "https://api.weixin.qq.com/shop/order/add";
+      String ORDER_PAY = "https://api.weixin.qq.com/shop/order/pay";
+      String ORDER_GET = "https://api.weixin.qq.com/shop/order/get";
+    }
   }
 }

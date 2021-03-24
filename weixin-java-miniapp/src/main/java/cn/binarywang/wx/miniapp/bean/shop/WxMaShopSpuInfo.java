@@ -80,7 +80,7 @@ public class WxMaShopSpuInfo implements Serializable {
    * </pre>
    */
   @SerializedName("third_cat_id")
-  private String thirdCatId;
+  private Integer thirdCatId;
 
   /**
    * 品牌id
@@ -89,7 +89,7 @@ public class WxMaShopSpuInfo implements Serializable {
    * </pre>
    */
   @SerializedName("brand_id")
-  private String brandId;
+  private Integer brandId;
 
   /**
    * sku数组

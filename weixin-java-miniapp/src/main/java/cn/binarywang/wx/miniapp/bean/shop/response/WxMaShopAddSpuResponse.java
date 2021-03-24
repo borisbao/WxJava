@@ -3,7 +3,6 @@ package cn.binarywang.wx.miniapp.bean.shop.response;
 import cn.binarywang.wx.miniapp.bean.shop.WxMaShopAddSpuResult;
 import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
-import java.util.List;
 import lombok.Data;
 
 /**
@@ -18,5 +17,5 @@ public class WxMaShopAddSpuResponse extends WxMaShopBaseResponse implements Seri
 
 
   @SerializedName("data")
-  private List<WxMaShopAddSpuResult> data;
+  private WxMaShopAddSpuResult data;
 }

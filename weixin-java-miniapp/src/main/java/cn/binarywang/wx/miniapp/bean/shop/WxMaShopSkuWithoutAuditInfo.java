@@ -39,7 +39,7 @@ public class WxMaShopSkuWithoutAuditInfo implements Serializable {
    * </pre>
    */
   @SerializedName("market_price")
-  private Integer market_price;
+  private Integer marketPrice;
 
   /**
    * 库存

@@ -45,7 +45,7 @@ public class WxMaShopOrderPayRequest implements Serializable {
    * </pre>
    */
   @SerializedName("action_type")
-  private String actionType;
+  private Integer actionType;
   /**
    * 其他具体原因
    * <pre>

@@ -19,7 +19,7 @@ public class WxMaShopSpuWithoutAuditInfo {
    * </pre>
    */
   @SerializedName("product_id")
-  private String product_id;
+  private String productId;
 
   /**
    * 商家自定义商品ID，新建必填，修改时与product_id二选一

@@ -18,7 +18,7 @@ public class WxMaShopOrderResult implements Serializable {
    * 交易组件平台订单ID
    */
   @SerializedName("order_id")
-  private Integer orderId;
+  private Long orderId;
 
   /**
    * 商家自定义订单ID

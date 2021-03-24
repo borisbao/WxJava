@@ -21,7 +21,7 @@ public class WxMaShopOrderPayRequest implements Serializable {
    * </pre>
    */
   @SerializedName("order_id")
-  private String orderId;
+  private Long orderId;
   /**
    * 商家自定义订单ID，与 order_id 二选一
    * <pre>

@@ -12,5 +12,5 @@ public class WxMaShopAuditResponse extends WxMaShopBaseResponse {
    * </pre>
    */
   @SerializedName("audit_id")
-  private Integer auditId;
+  private String auditId;
 }

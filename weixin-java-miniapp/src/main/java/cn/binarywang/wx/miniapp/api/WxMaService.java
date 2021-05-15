@@ -377,6 +377,8 @@ public interface WxMaService extends WxService {
    */
   WxImgProcService getImgProcService();
 
+  WxMaShopService getShopService();
+
 //  /**
 //   * 返回小程序交易组件-售后服务接口
 //   * @return

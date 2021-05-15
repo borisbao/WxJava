@@ -63,6 +63,7 @@ public abstract class BaseWxMaServiceImpl<H, P> implements WxMaService, RequestH
   private final WxMaLiveMemberService liveMemberService = new WxMaLiveMemberServiceImpl(this);
   private final WxOcrService ocrService = new WxMaOcrServiceImpl(this);
   private final WxImgProcService imgProcService = new WxMaImgProcServiceImpl(this);
+  private final WxMaShopService shopService = new WxMaShopServiceImpl(this);
   private final WxMaShopSpuService shopSpuService = new WxMaShopSpuServiceImpl(this);
   private final WxMaShopOrderService shopOrderService = new WxMaShopOrderServiceImpl(this);
   private Map<String, WxMaConfig> configMap;
@@ -499,6 +500,11 @@ public abstract class BaseWxMaServiceImpl<H, P> implements WxMaService, RequestH
   @Override
   public WxImgProcService getImgProcService() {
     return this.imgProcService;
+  }
+
+  @Override
+  public WxMaShopService getShopService() {
+    return this.shopService;
   }
 
   @Override

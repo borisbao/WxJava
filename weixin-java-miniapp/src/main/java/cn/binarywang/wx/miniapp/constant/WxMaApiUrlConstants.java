@@ -298,6 +298,11 @@ public class WxMaApiUrlConstants {
   }
 
   public interface Shop {
+    interface Common {
+      String AUDIT_BRAND = "https://api.weixin.qq.com/shop/audit/audit_brand";
+      String AUDIT_CATEGORY = "https://api.weixin.qq.com/shop/audit/audit_category";
+    }
+
     interface Spu {
       String SPU_ADD_URL = "https://api.weixin.qq.com/shop/spu/add";
       String SPU_DEL_URL = "https://api.weixin.qq.com/shop/spu/del";
